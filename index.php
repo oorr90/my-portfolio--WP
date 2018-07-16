@@ -18,17 +18,9 @@
 
 		    	<?php 
 
-		    		if( is_page( 'Services' ) ):
+		    		if( is_page( 'Portfolio' ) ):
 
-		    			get_template_part( 'partials/acf', 'services' );
-
-		    		elseif( is_page( 'Experience' ) ):
-
-		    			get_template_part( 'partials/acf', 'experience' );
-
-		    		elseif( is_page('Resources') ):
-
-		    			get_template_part( 'partials/acf', 'resources' );
+		    			get_template_part( 'partials/acf', 'portfolio' );
 
 		    		endif;
 

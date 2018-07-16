@@ -28,6 +28,7 @@ h6 {
 	font-family: "Courier New";
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
 }
 
 img {
@@ -200,7 +201,6 @@ INTRODUCTION
 -----------------------*/
 
 .introduction h1 {
-	font-weight: normal;
 	font-size: 3em;
 }
 
@@ -333,7 +333,6 @@ PAGE HEADER / INTRO
 }
 
 .page-intro h1 {
-	font-weight: normal;
 	font-size: 3em;
 }
 
@@ -367,8 +366,7 @@ FOOTER
 
 .footer-social-wrap h3 {
 	color: #fff;
-	padding: 20px 0;
-	font-weight: normal;
+	padding: 40px 0 0;
 }
 
 .footer-social {
@@ -379,7 +377,7 @@ FOOTER
 
 .footer-social-icon {
 	width: 30px;
-	margin: 20px 40px 40px;
+	margin: 40px 40px 60px;
 }
 
 .footer-wrap {
@@ -389,5 +387,6 @@ FOOTER
 .footer-wrap p {
 	margin-top: 40px;
 	text-align: center;
+	font-family: "Courier New";
 }
 
