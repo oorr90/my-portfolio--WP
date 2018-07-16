@@ -1,0 +1,7 @@
+# Ignore ai files in assets folder
+
+assets/images/ai
+
+# Ignore portfolio images in assets folder
+
+assets/images/portfolio-items

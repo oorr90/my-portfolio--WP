@@ -1,0 +1,393 @@
+/********************************
+
+OVERALL STYLES
+
+*********************************/
+
+/*-----------------------
+
+FORMATTING
+
+-----------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Courier New";
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav {
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+
+.introduction, .outro {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.add-margin {
+	margin: 60px 50px;
+}
+
+.add-padding {
+	padding: 60px 50px;
+}
+
+
+
+/*-----------------------
+
+COLORS
+
+-----------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: #052A45;
+}
+
+span {
+	color: #E06245;
+}
+
+nav a {
+	color: #052A45;
+}
+
+/*** MENU ITEMS ****/
+
+li a {
+	transition: .5s ease;
+}
+
+li a:hover {
+	color: rgba(5, 42, 69, .4);
+}
+
+.current_page_item a {
+	color: #E06245;
+	transition: .5s ease;
+}
+
+.current_page_item a:hover {
+	color: rgba(224, 98, 69, .4);
+}
+
+/*** BUTTONS ****/
+
+.button, input[type="submit"] {
+	display: inline-block;
+	background-color: #052A45;
+	transition: .5s ease;
+}
+
+.button:hover, input[type="submit"]:hover {
+	background-color: rgba(5, 42, 69, .6);
+}
+
+.button a {
+	padding: 12px;
+	display: inline-block;
+	color: #fff;
+	font-family: "Courier New";
+}
+
+
+
+/********************************
+
+HEADER
+
+*********************************/
+
+
+
+.primary-nav-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline; 
+}
+
+
+/*-----------------------
+
+HOME ICON
+
+-----------------------*/
+
+.nav-top-icon {
+	width: 200px;
+	text-align: center;
+}
+
+.nav-top-icon p {
+	font-size: .8em;
+}
+
+
+
+/*-----------------------
+
+NAV ITEMS
+
+-----------------------*/
+
+.nav-wrap {
+	width: 45%;
+}
+
+.nav-wrap .menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.primary-nav-top a {
+	padding: 6px;
+}
+
+
+
+
+/********************************
+
+FRONT PAGE
+
+*********************************/
+
+/*-----------------------
+
+INTRODUCTION
+
+-----------------------*/
+
+.introduction h1 {
+	font-weight: normal;
+	font-size: 3em;
+}
+
+.intro-col {
+	width: 40%;
+}
+
+
+/*-----------------------
+
+SKILLS LIST
+
+-----------------------*/
+
+.skills {
+	text-align: center;
+	width: 80%;
+	margin: 150px auto 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+
+.single-skill {
+	width: 28%;
+}
+
+.single-skill img {
+	width: 80px;
+}
+
+.sub-skills {
+	margin-top: 20px;
+}
+
+.sub-skills li {
+	margin-bottom: 10px;
+	color: #ACB6BF
+}
+
+/*-----------------------
+
+LEARN MORE
+
+-----------------------*/
+
+.home-learn-more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 240px;
+}
+
+
+/*-----------------------
+
+OUTRO
+
+-----------------------*/
+
+.outro {
+	font-family: "Courier New";
+	font-size: 1.5em;
+	background-color: rgba(172, 182, 191, 0.3);
+}
+
+.outro div {
+	width: 30%;
+}
+
+
+
+/********************************
+
+PAGE: CONTACT
+
+*********************************/
+
+div.wpcf7 {
+	text-transform: uppercase;
+	
+}
+
+div.wpcf7 label {
+	color: #052A45;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	border: 2px solid #ACB6BF;
+	box-shadow: none;
+	width: 100%;
+	font-size: 1.2em;
+	padding: 6px;
+}
+
+input[type="submit"] {
+	font-family: "Courier New";
+	color: #fff;
+	border: none;
+	margin-top: 20px;
+	padding: 8px 14px;
+}
+
+
+
+
+/********************************
+
+INDEX PAGE: GENERAL
+
+*********************************/
+
+/*-----------------------
+
+PAGE HEADER / INTRO
+
+-----------------------*/
+
+.page-intro {
+	text-align: center;
+}
+
+.page-intro h1 {
+	font-weight: normal;
+	font-size: 3em;
+}
+
+.page-intro-image {
+	width: 60px;
+	margin: 0 auto;
+}
+
+.page-intro-content {
+	text-align: justify;
+	width: 50%;
+	margin: 30px auto 100px;
+}
+
+.page-intro-content a, .page-intro-content a:visited {
+	color: #E06245;
+}
+
+
+
+/********************************
+
+FOOTER
+
+*********************************/
+
+.footer-social-wrap {
+	background-color: #052A45;
+	text-align: center;
+}
+
+.footer-social-wrap h3 {
+	color: #fff;
+	padding: 20px 0;
+	font-weight: normal;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-social-icon {
+	width: 30px;
+	margin: 20px 40px 40px;
+}
+
+.footer-wrap {
+	font-size: .85em;
+}
+
+.footer-wrap p {
+	margin-top: 40px;
+	text-align: center;
+}
+
