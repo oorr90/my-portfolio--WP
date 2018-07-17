@@ -172,7 +172,7 @@ NAV ITEMS
 -----------------------*/
 
 .nav-wrap {
-	width: 45%;
+	width: 48%;
 }
 
 .nav-wrap .menu {
@@ -267,7 +267,7 @@ OUTRO
 	background-color: rgba(172, 182, 191, 0.3);
 }
 
-.outro div {
+.outro-col {
 	width: 30%;
 }
 
@@ -389,4 +389,101 @@ FOOTER
 	text-align: center;
 	font-family: "Courier New";
 }
+
+
+
+
+
+/********************************
+
+COMING SOON
+
+*********************************/
+
+.coming-soon {
+	text-align: center;
+	padding: 0  0 80px 0;
+}
+
+
+
+
+/********************************
+
+MEDIA QUERIES
+
+*********************************/
+
+@media only screen and (max-width: 950px) {
+
+    .skills {
+    	width: 90%;
+    }
+
+    .single-skill {
+    	margin-top: 30px;
+		width: 30%;
+	}
+
+	.page-intro-content {
+		width: 70%;
+	}
+}
+
+
+@media only screen and (max-width: 680px) {
+
+	.primary-nav-top {
+		flex-wrap: wrap;
+	}
+
+	.primary-nav-top {
+		justify-content: center
+	}
+
+	.nav-wrap .menu {
+		flex-wrap: wrap;
+	}
+
+	.nav-wrap .menu li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.introduction h1 {
+		font-size: 2em;
+	}
+
+	.intro-col img {
+		max-width: 80%;
+	}
+
+	.skills {
+		margin-top: 50px;
+		flex-wrap: wrap;
+	}
+
+	.single-skill {
+		width: 100%;
+	}
+
+	.outro {
+		font-size: 1.1em;
+	}
+
+	.outro-col {
+		width: 50%;
+	}
+
+	.outro-col:last-of-type {
+		width: 30%;
+	}
+
+	.page-intro-content {
+		width: 90%;
+	}
+
+}
+
+
 

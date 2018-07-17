@@ -12,8 +12,9 @@ function olivia_script_enqueue() {
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/assets/css/normalize.css', array(), '1.0.0', 'all' );
 	wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0.0', 'all' );
 
-	wp_enqueue_script( 'customjs', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'customjs', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.0', true );
 	//If you want JS in footer, TRUE as bool
+
 }
 add_action( 'wp_enqueue_scripts', 'olivia_script_enqueue');
 
@@ -79,6 +80,26 @@ function wpdocs_filter_wp_title( $title, $sep ) {
     return $title;
 }
 add_filter( 'wp_title', 'wpdocs_filter_wp_title', 10, 2 );
+
+
+
+
+
+
+
+/*----------------------
+
+GET PROJECT LIST
+
+-----------------------*/
+
+
+
+
+
+
+
+
 
 
 

@@ -1,16 +1,15 @@
 <?php 
 
-$args = array( 'post_type' =>'project', );
-$query = new WP_Query( $args ); 
 
-if ( $query->have_posts()) : 
-	while ( $query->have_posts() ) : $query->the_post(); ?>
-		
-		<h3><?php echo the_title(); ?></h3>
-		
+$args = array( 'post_type' => 'project', 'posts_per_page' => 10 );
+$loop = new WP_Query( $args );
 
+while ( $loop->have_posts() ) : $loop->the_post();
+  echo the_title();
+  echo '<div class="entry-content">';
+  echo the_content();
+  echo '</div>';
+endwhile;
 
-	<?php endwhile;
-endif;
 
 ?>

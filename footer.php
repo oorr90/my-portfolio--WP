@@ -4,13 +4,13 @@
 				<h3>Connect</h3>
 				<div class="footer-social">
 					<div class="footer-social-icon">
-						<a href="https://www.linkedin.com/in/olivia-h-orr"><img src="<?php echo get_template_directory_uri() . '/img/linkedin_circle_logo_white.png'; ?>" alt="White LinkedIn logo"></a>
+						<a href="https://www.linkedin.com/in/olivia-h-orr" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/linkedin_circle_logo_white.png'; ?>" alt="White LinkedIn logo"></a>
 					</div>
 					<div class="footer-social-icon">
-						<a href="https://www.github.com/oorr90"><img src="<?php echo get_template_directory_uri() . '/img/github_circle_logo_white.png'; ?>" alt="White Github logo"></a>
+						<a href="https://www.github.com/oorr90" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/github_circle_logo_white.png'; ?>" alt="White Github logo"></a>
 					</div>
 					<div class="footer-social-icon">
-						<a href="#"><img src="<?php echo get_template_directory_uri() . '/img/mail_circle_icon_black.png'; ?>" alt="White email logo"></a>
+						<a href="<?php echo get_permalink('12'); ?>"><img src="<?php echo get_template_directory_uri() . '/img/mail_circle_icon_black.png'; ?>" alt="White email logo"></a>
 					</div>
 				</div>
 			</div>

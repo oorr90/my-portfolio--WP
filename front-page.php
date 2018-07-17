@@ -20,7 +20,7 @@
 
 <div class="home-learn-more">
 	<div class="button">
-		<a href="#">Learn More &rarr;</a>
+		<a href="<?php echo get_permalink('10'); ?>">Learn More &rarr;</a>
 	</div>
 </div>
 
