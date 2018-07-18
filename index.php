@@ -17,13 +17,10 @@
 		    	</div>
 
 		    	<?php 
-
 		    		if( is_page( 'Portfolio' ) ):
-
-		    			//get_template_part( 'partials/acf', 'portfolio' );
-		    			get_template_part('partials/coming', 'soon');
+		    			get_template_part( 'partials/acf', 'portfolio' );
+		    			//get_template_part('partials/coming', 'soon');
 		    		endif;
-
 		    	?>
 
 		    <?php endwhile; ?>

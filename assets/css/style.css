@@ -93,7 +93,7 @@ nav a {
 	color: #052A45;
 }
 
-/*** MENU ITEMS ****/
+/*** LINKS ****/
 
 li a {
 	transition: .5s ease;
@@ -103,12 +103,15 @@ li a:hover {
 	color: rgba(5, 42, 69, .4);
 }
 
-.current_page_item a {
+.current_page_item a, 
+.page-intro-content a, 
+.page-intro-content a:visited {
 	color: #E06245;
 	transition: .5s ease;
 }
 
-.current_page_item a:hover {
+.current_page_item a:hover,
+.page-intro-content a:hover {
 	color: rgba(224, 98, 69, .4);
 }
 
@@ -132,14 +135,27 @@ li a:hover {
 }
 
 
+/*** FOOTER ***/
+
+.footer-social-wrap {
+	background-color: #052A45;
+}
+
+.footer-social-wrap h3 {
+	color: #fff;
+}
+
+.outro {
+	background-color: rgba(172, 182, 191, 0.3);
+}
+
+
 
 /********************************
 
 HEADER
 
 *********************************/
-
-
 
 .primary-nav-top {
 	display: flex;
@@ -264,7 +280,6 @@ OUTRO
 .outro {
 	font-family: "Courier New";
 	font-size: 1.5em;
-	background-color: rgba(172, 182, 191, 0.3);
 }
 
 .outro-col {
@@ -347,9 +362,61 @@ PAGE HEADER / INTRO
 	margin: 30px auto 100px;
 }
 
-.page-intro-content a, .page-intro-content a:visited {
-	color: #E06245;
+
+
+
+/********************************
+
+PAGE: PORTFOLIO
+
+*********************************/
+
+/*-----------------------
+
+LISTS OF CATEGORIES
+
+-----------------------*/
+
+.project-contain {
+	display: flex;
+	justify-content: space-around;
 }
+
+.project-type-wrap {
+	width: 30%;
+}
+
+
+
+
+
+
+/*-----------------------
+
+SLIDER FORMATTING
+
+-----------------------*/
+
+.reveal {
+	background-color: #052A45;
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+}
+
+.reveal-col {
+	width: 40%;
+}
+
+.reveal-col h3, .reveal-col h4, .reveal-col p, .reveal-col li {
+	color: #fff;
+}
+
+
+.row {
+	display: none;
+}
+
 
 
 
@@ -360,12 +427,10 @@ FOOTER
 *********************************/
 
 .footer-social-wrap {
-	background-color: #052A45;
 	text-align: center;
 }
 
 .footer-social-wrap h3 {
-	color: #fff;
 	padding: 40px 0 0;
 }
 
