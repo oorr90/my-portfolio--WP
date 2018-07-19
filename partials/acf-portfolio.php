@@ -75,27 +75,59 @@ foreach ($projects as $project) {
 		foreach ($web as $webs):
 			$count++; ?>
 
-			<div class="row<?php echo $count; ?> row reveal">
-				<div class="reveal-col">
-					<h3><?php echo $webs -> post_title ?></h3>
-					<p><?php echo $webs -> post_content; ?></p>
-					<h4>Skills Required:</h4>
-					<ul>
-						<?php
-						foreach ($webs -> additional_fields['required_skills'] as $skills) { ?>
-							<li><?php echo $skills; ?></li>
-						<?php }
-						?>
-					</ul>
-				</div>
-				<div class="reveal-col">
-					<div>
-						<img src="">
+			<div class="row<?php echo $count; ?> row">
+				<div class="reveal">
+					<div class="reveal-col">
+						<h3><?php echo $webs -> post_title ?></h3>
+						<p><?php echo $webs -> post_content; ?></p>
+						<h4>Skills Required:</h4>
+						<ul>
+							<?php
+							foreach ($webs -> additional_fields['required_skills'] as $skills) { ?>
+								<li><?php echo $skills; ?></li>
+							<?php }
+							?>
+						</ul>
+					</div>
+					<div class="reveal-col">
+						<div class="reveal-img">
+							<img src="<?php echo $webs -> image_paths['large']; ?>">
+						</div>
+						<div class="button">
+							<a href="http://<?php echo $webs -> additional_fields['website_link']; ?>" target="_blank">Visit Site &rarr;</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-		<?php endforeach; ?>
+	<?php endforeach; ?>
+	<?php 
+		foreach ($print as $prints):
+			$count++; ?>
+
+			<div class="row<?php echo $count; ?> row">
+				<div class="reveal">
+					<div class="reveal-col">
+						<h3><?php echo $prints -> post_title ?></h3>
+						<p><?php echo $prints -> post_content; ?></p>
+						<h4>Skills Required:</h4>
+						<ul>
+							<?php
+							foreach ($prints -> additional_fields['required_skills'] as $skills) { ?>
+								<li><?php echo $skills; ?></li>
+							<?php }
+							?>
+						</ul>
+					</div>
+					<div class="reveal-col">
+						<div class="reveal-img">
+							<img src="<?php echo $prints -> image_paths['large']; ?>">
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<?php endforeach; ?>
 </div>
 
 

@@ -1,6 +1,9 @@
 <?php
 
 
+//HIDE ADMIN BAR IN FRONT END WHEN LOGGED IN
+add_filter('show_admin_bar', '__return_false');
+
 /*----------------------
 
 ADD CSS AND JAVASCRIPT

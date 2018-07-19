@@ -29,4 +29,32 @@ jQuery(document).ready(function($) {
     	});
     });
 
+    $( ".show5" ).click(function(e) {
+        e.preventDefault();
+            $(".row").not(".row5").slideUp();
+            $( ".row5" ).slideToggle( "slow", function() {
+    	});
+    });
+
+    $( ".show6" ).click(function(e) {
+        e.preventDefault();
+            $(".row").not(".row6").slideUp();
+            $( ".row6" ).slideToggle( "slow", function() {
+    	});
+    });
+
+    $( ".show7" ).click(function(e) {
+        e.preventDefault();
+            $(".row").not(".row7").slideUp();
+            $( ".row7" ).slideToggle( "slow", function() {
+    	});
+    });
+
+    $( ".show8" ).click(function(e) {
+        e.preventDefault();
+            $(".row").not(".row8").slideUp();
+            $( ".row8" ).slideToggle( "slow", function() {
+    	});
+    });
+
 });
