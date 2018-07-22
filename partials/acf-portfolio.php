@@ -65,6 +65,7 @@ foreach ($projects as $project) {
 				<p class="show<?php echo $count; ?> show"><?php echo $vidoes -> post_title; ?></p>
 
 			<?php endforeach; ?>
+			<h5>Video links coming soon!</h5>
 	</div>
 </div>
 <div class="display-projects">

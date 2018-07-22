@@ -371,6 +371,15 @@ PAGE: PORTFOLIO
 
 *********************************/
 
+.click-project {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.click-project img {
+	width: 30px;
+}
+
 /*-----------------------
 
 LISTS OF CATEGORIES

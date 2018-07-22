@@ -89,7 +89,7 @@ add_filter( 'wp_title', 'wpdocs_filter_wp_title', 10, 2 );
 
 /*----------------------
 
-PROJECT LIST
+GET PROJECT LIST
 
 -----------------------*/
 
@@ -132,8 +132,255 @@ function get_image_paths($postId){
 } 
 
 
+/*----------------------
+
+REGISTER ACFs
+
+-----------------------*/
+
+//HOME PAGE HIGHLIGHTS
 
 
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_home-highlights',
+		'title' => 'Home Highlights',
+		'fields' => array (
+			array (
+				'key' => 'field_5b4bc3a8dd6b1',
+				'label' => 'Home Highlights',
+				'name' => 'home_highlights',
+				'type' => 'repeater',
+				'instructions' => 'Add all of your highlights with featured images and skill lists!',
+				'sub_fields' => array (
+					array (
+						'key' => 'field_5b4bc4743f885',
+						'label' => 'Title',
+						'name' => 'title',
+						'type' => 'text',
+						'instructions' => 'Title of the skill!',
+						'required' => 1,
+						'column_width' => '',
+						'default_value' => '',
+						'placeholder' => '',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'html',
+						'maxlength' => '',
+					),
+					array (
+						'key' => 'field_5b4bc3e1dd6b3',
+						'label' => 'Sub skills',
+						'name' => 'sub_skills',
+						'type' => 'repeater',
+						'column_width' => '',
+						'sub_fields' => array (
+							array (
+								'key' => 'field_5b4bc3efdd6b4',
+								'label' => 'Sub skill',
+								'name' => 'sub_skill',
+								'type' => 'text',
+								'required' => 1,
+								'column_width' => '',
+								'default_value' => '',
+								'placeholder' => '',
+								'prepend' => '',
+								'append' => '',
+								'formatting' => 'html',
+								'maxlength' => '',
+							),
+						),
+						'row_min' => '',
+						'row_limit' => '',
+						'layout' => 'table',
+						'button_label' => 'Add Row',
+					),
+				),
+				'row_min' => '',
+				'row_limit' => '',
+				'layout' => 'table',
+				'button_label' => 'Add Row',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page',
+					'operator' => '==',
+					'value' => '8',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+
+//PROJECT DETAILS
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_project-details',
+		'title' => 'Project Details',
+		'fields' => array (
+			array (
+				'key' => 'field_5b4cb8d22e7ff',
+				'label' => 'Project Type',
+				'name' => 'project_type',
+				'type' => 'select',
+				'required' => 1,
+				'choices' => array (
+					'Website' => 'Website',
+					'Print' => 'Print',
+					'Video' => 'Video',
+					'Other' => 'Other',
+				),
+				'default_value' => '',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
+				'key' => 'field_5b4cb8f62e800',
+				'label' => 'Required Skills',
+				'name' => 'required_skills',
+				'type' => 'checkbox',
+				'required' => 1,
+				'choices' => array (
+					'Adobe Illustrator' => 'Adobe Illustrator',
+					'Adobe Photoshop' => 'Adobe Photoshop',
+					'Adobe InDesign' => 'Adobe InDesign',
+					'Adobe After Effects' => 'Adobe After Effects',
+					'HTML' => 'HTML',
+					'CSS' => 'CSS',
+					'PHP' => 'PHP',
+					'JavaScript' => 'JavaScript',
+					'WordPress' => 'WordPress',
+					'Java' => 'Java',
+				),
+				'default_value' => '',
+				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_5b4cb9692e802',
+				'label' => 'Website Link',
+				'name' => 'website_link',
+				'type' => 'text',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5b4cb8d22e7ff',
+							'operator' => '==',
+							'value' => 'Website',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => 'http://',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5b4cb9892e803',
+				'label' => 'Video Link',
+				'name' => 'video_link',
+				'type' => 'text',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5b4cb8d22e7ff',
+							'operator' => '==',
+							'value' => 'Video',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => 'http://',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5b4cb9b32e804',
+				'label' => 'Full Size Images',
+				'name' => 'full_size_images',
+				'type' => 'repeater',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5b4cb8d22e7ff',
+							'operator' => '==',
+							'value' => 'Print',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'sub_fields' => array (
+					array (
+						'key' => 'field_5b4cb9c32e805',
+						'label' => 'Project Image',
+						'name' => 'project_image',
+						'type' => 'image',
+						'conditional_logic' => array (
+							'status' => 1,
+							'rules' => array (
+								array (
+									'field' => 'field_5b4cb8d22e7ff',
+									'operator' => '==',
+									'value' => 'Print',
+								),
+							),
+							'allorany' => 'all',
+						),
+						'column_width' => '',
+						'save_format' => 'object',
+						'preview_size' => 'thumbnail',
+						'library' => 'all',
+					),
+				),
+				'row_min' => '',
+				'row_limit' => '',
+				'layout' => 'table',
+				'button_label' => 'Add Row',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'project',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
 
 
 

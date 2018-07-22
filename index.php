@@ -13,6 +13,14 @@
 		    		
 		    		<div class="page-intro-content">
 		    			<p><?php the_content(); ?></p>
+		    			<?php
+			    			if( is_page( 'Portfolio' ) ): ?>
+			    				<div class="click-project">
+									<p>Click project name to view details</p>
+									<img src="<?php echo get_template_directory_uri() . '/img/down-arrow.png'; ?>" alt="blue down arrow">
+								</div>
+			    			<?php endif;
+		    			?>
 		    		</div>
 		    	</div>
 
