@@ -17,7 +17,11 @@
 					<p>Olivia Heshima Orr</p>
 				</div>
 				<div class="nav-wrap">
+					<div id="toggle">
+					<img src="http://localhost/olivia-orr/wp-content/themes/myportfolio/assets/images/menu.png" alt="Show" /></div>
+					<div id="popout">
 					<?php wp_nav_menu( array( 'theme_location'=>'primary' ) ); ?>
+					</div>
 				</div>
 			</nav>
 		</header>

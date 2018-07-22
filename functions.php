@@ -17,9 +17,14 @@ function olivia_script_enqueue() {
 
 	wp_enqueue_script( 'customjs', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.0', true );
 	//If you want JS in footer, TRUE as bool
+	wp_enqueue_script( 'wpb_slidepanel', get_template_directory_uri() . '/assets/js/slidepanel.js', array('jquery'), '20160909', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'olivia_script_enqueue');
+
+
+
+
 
 
 

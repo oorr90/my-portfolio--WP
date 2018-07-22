@@ -507,80 +507,73 @@ COMING SOON
 
 
 
+
+
+
+/********************************
+
+RESPONSIVE NAV
+
+*********************************/
+
+
+
+@media screen and (min-width: 880px) { 
+	#toggle {
+		display:none;
+	}
+ 
+} 
+ 
+@media screen and (max-width: 879px) { 
+	#popout {
+		position: fixed;
+		height: 100%;
+		width: 250px;
+		background: rgb(255, 255, 255);
+		background: rgba(255, 255, 255, .9);
+		color: white;
+		top: 0px;
+		left: -250px;
+		overflow:auto;
+	}
+ 
+ 
+	#toggle {
+		float: right;
+		width: 22px;
+		height: 22px;
+	 
+	}
+
+	.nav-wrap .menu {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.nav-wrap .menu li {
+		padding: 14px 0;
+		margin: 5px 0;
+	}
+} 
+
+
 /********************************
 
 MEDIA QUERIES
 
 *********************************/
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 850px) {
 
-    .skills {
-    	width: 90%;
-    }
 
-    .single-skill {
-    	margin-top: 30px;
-		width: 30%;
-	}
 
-	.page-intro-content {
-		width: 70%;
-	}
 }
 
 
 @media only screen and (max-width: 680px) {
 
-	.primary-nav-top {
-		flex-wrap: wrap;
-	}
-
-	.primary-nav-top {
-		justify-content: center
-	}
-
-	.nav-wrap .menu {
-		flex-wrap: wrap;
-	}
-
-	.nav-wrap .menu li {
-		width: 100%;
-		text-align: center;
-	}
-
-	.introduction h1 {
-		font-size: 2em;
-	}
-
-	.intro-col img {
-		max-width: 80%;
-	}
-
-	.skills {
-		margin-top: 50px;
-		flex-wrap: wrap;
-	}
-
-	.single-skill {
-		width: 100%;
-	}
-
-	.outro {
-		font-size: 1.1em;
-	}
-
-	.outro-col {
-		width: 50%;
-	}
-
-	.outro-col:last-of-type {
-		width: 30%;
-	}
-
-	.page-intro-content {
-		width: 90%;
-	}
+	
 
 }
 
