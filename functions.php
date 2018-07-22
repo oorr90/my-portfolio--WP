@@ -25,9 +25,6 @@ add_action( 'wp_enqueue_scripts', 'olivia_script_enqueue');
 
 
 
-
-
-
 /*----------------------
 
 ACTIVATE CUSTOM MENUS
