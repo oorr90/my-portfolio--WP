@@ -12,7 +12,7 @@
 
 	    	<div class="single-skill">
 
-	    		<img src="<?php echo get_template_directory_uri() . '/img/home-iconography.png'; ?>" alt="three cubic shapes">
+	    		<img src="<?php echo get_template_directory_uri() . '/img/home-iconography-blue.png'; ?>" alt="three cubic shapes">
 
 	        	<h2><?php the_sub_field('title'); ?></h2>
 

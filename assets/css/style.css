@@ -119,12 +119,14 @@ li a:hover {
 
 .button, input[type="submit"] {
 	display: inline-block;
-	background-color: #052A45;
+	/*background-color: #052A45;*/
+	background-color: #E06245;
 	transition: .5s ease;
 }
 
 .button:hover, input[type="submit"]:hover {
-	background-color: rgba(5, 42, 69, .6);
+	/*background-color: rgba(5, 42, 69, .6);*/
+	background-color: rgba(244, 98, 69, .6);
 }
 
 .button a {
@@ -254,7 +256,7 @@ SKILLS LIST
 
 .sub-skills li {
 	margin-bottom: 10px;
-	color: #ACB6BF
+	color: rgba(84, 84, 91, .8);
 }
 
 /*-----------------------
@@ -621,6 +623,8 @@ MEDIA QUERIES
 		padding: 40px 30px;
 		font-size: .9em;
 	}
+
+
 
 }
 

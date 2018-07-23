@@ -20,7 +20,7 @@
 
 <div class="home-learn-more">
 	<div class="button">
-		<a href="<?php echo get_permalink('10'); ?>">Learn More &rarr;</a>
+		<a href="<?php echo get_permalink('10'); ?>">My Work &rarr;</a>
 	</div>
 </div>
 
@@ -35,9 +35,9 @@
 		endif;
 	?>
 
-	<div class="outro-col">
-		<img src="<?php echo get_template_directory_uri() . '/assets/images/outro-image.png'; ?>" alt="three cubic shapes">
-	</div>
+	<!--<div class="outro-col">
+		<img src="<?php //echo get_template_directory_uri() . '/assets/images/outro-image.png'; ?>" alt="three cubic shapes">
+	</div>-->
 
 </div>
 
