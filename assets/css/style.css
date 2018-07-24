@@ -52,7 +52,7 @@ nav {
 }
 
 
-.introduction, .outro {
+.introduction {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -284,9 +284,10 @@ OUTRO
 	font-size: 1.5em;
 }
 
-.outro-col {
-	width: 30%;
+.outro p {
+	width: 40%;
 }
+
 
 
 
@@ -568,12 +569,12 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 880px) {
 
-	.intro-col:first-of-type, .outro-col:first-of-type {
+	.intro-col:first-of-type {
 		width: 68%;
 		font-size: .8em;
 	}
 
-	.intro-col:last-of-type, .outro-col:last-of-type {
+	.intro-col:last-of-type {
 		width: 25%;
 	}
 
@@ -604,6 +605,11 @@ MEDIA QUERIES
 	.single-skill {
 		width: 100%;
 		margin-top: 20px;
+	}
+
+	.outro p {
+		width: 60%;
+		font-size: .8em;
 	}
 
 	.page-intro-content {
@@ -639,11 +645,11 @@ MEDIA QUERIES
 		justify-content: center;
 	}
 
-	.intro-col:first-of-type, .outro-col:first-of-type {
+	.intro-col:first-of-type {
 		width: 100%;
 	}
 
-	.intro-col:last-of-type, .outro-col:last-of-type {
+	.intro-col:last-of-type {
 		display: none;
 	}
 
@@ -657,6 +663,19 @@ MEDIA QUERIES
 
 	.reveal-col:first-of-type {
 		margin-bottom: 30px;
+	}
+
+	.project-type-wrap p {
+		font-size: .85em;
+	}
+
+	.outro p {
+		width: 100%;
+	}
+
+	.footer-social-icon {
+		margin-right: 15px;
+		margin-left: 15px;
 	}
 
 }

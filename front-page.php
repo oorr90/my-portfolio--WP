@@ -30,14 +30,10 @@
 
 		if ( have_posts() ):
 			while( have_posts() ): the_post(); ?>
-				<div class="outro-col"><p><?php the_content(); ?></p></div>
+				<p><?php the_content(); ?></p>
 			<?php endwhile;
 		endif;
 	?>
-
-	<!--<div class="outro-col">
-		<img src="<?php //echo get_template_directory_uri() . '/assets/images/outro-image.png'; ?>" alt="three cubic shapes">
-	</div>-->
 
 </div>
 
