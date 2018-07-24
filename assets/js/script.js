@@ -1,6 +1,17 @@
 jQuery(document).ready(function($) {
 //$is now jQuery
 
+    var totalRows = $('.row');
+    //console.log(totalRows.length);
+
+    
+    $('#contain').click(function (e) { //#A_ID is an example. Use the id of your Anchor
+        $('html, body').animate({
+            scrollTop: $('#project').offset().top - 20 //#DIV_ID is an example. Use the id of your destination on the page
+        }, 'slow');
+    });
+
+
 	$( ".show1" ).click(function(e) {
         e.preventDefault();
             $(".row").not(".row1").slideUp();

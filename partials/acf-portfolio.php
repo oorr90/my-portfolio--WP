@@ -30,7 +30,7 @@ foreach ($projects as $project) {
 ?>
 
 
-<div class="project-contain">
+<div class="project-contain" id="contain">
 	<div class="project-type-wrap">
 		<h2>Web</h2>
 		<?php
@@ -55,7 +55,7 @@ foreach ($projects as $project) {
 
 			<?php endforeach; ?>
 	</div>
-	<div class="project-type-wrap">
+	<!--<div class="project-type-wrap">
 		<h2>Video</h2>
 		<?php
 
@@ -66,9 +66,9 @@ foreach ($projects as $project) {
 
 			<?php endforeach; ?>
 			<h5>Video links coming soon!</h5>
-	</div>
+	</div>-->
 </div>
-<div class="display-projects">
+<div class="display-projects" id="project">
 	<?php
 
 		$count = 0;
